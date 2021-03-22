@@ -4,37 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Your Local Weather DashBoard!</title>
 </head>
 <body>
-    <header class="header">
-        <h1>Your Weather dashboard</h1>
+    <header class="jumbotron">
+        <div class="container-fluid">
+            <h1 class="display-4 col-12">Your Weather dashboard</h1>
+        </div>
     </header>
-    <aside class= "aside">
-        <p>Search for a city:</p>
-        <label for="userinput">City Name:</label>
-        <input name="userinput" id="userinput" type="text" placeholder="Minneapolis"/>
-        <button id="search"></button>
-        <div id="pastsearch"></div>
-    </aside>
-    <main class = "main">
-        <section id="today">
-        </section>
-        <section id="fiveday">
-            <h5>5-day forecast</h5>
-        </section>
-    </main>
+    <div class="container">
+        <div class ="row">
+            <aside class="aside col-sm-3">
+                    <p>Search for a city:</p>
+                    <label for="userinput">City Name:</label>
+                    <input name="userinput" id="userinput" type="text" placeholder="Minneapolis"/>
+                    <button class="apirequest" id="search"></button>
+                
+                <div id="pastsearch"></div>
+            </aside>
+            <main class="main col-sm-9">
+                <div class ="container">
+                    <section id="today col-12">
+                        <h3 id="cityname">something</h3>
+                        <p id="currtemp">currenttemp</p>
+                        <p id="currhum">current hu,</p>
+                        <p id="windspeed">wind</p>
+                        <p id="uvindex">uvindex</p>
+                    </section>
+                    <section>
+                        <h5>5-day forecast</h5>
+                        <div class= "container">
+                            <row id='5day' class="row justify-content-end">
+                                <!-- <figure class="col-md-2">
+                                    <p>date</p>
+                                    <p>temp</p>
+                                    <p>hum</p>
+                                </figure>
+                                <figure class="col-md-2">
+                                    <p>date</p>
+                                    <p>temp</p>
+                                    <p>hum</p>
+                                </figure>                                
+                                <figure class="col-md-2">
+                                    <p>date</p>
+                                    <p>temp</p>
+                                    <p>hum</p>
+                                </figure>                                
+                                <figure class="col-md-2">
+                                    <p>date</p>
+                                    <p>temp</p>
+                                    <p>hum</p>
+                                </figure>                                
+                                <figure class="col-md-2">
+                                    <p>date</p>
+                                    <p>temp</p>
+                                    <p>hum</p>
+                                </figure> -->
+                            </row>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
