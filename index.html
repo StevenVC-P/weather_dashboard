@@ -17,31 +17,29 @@
 <body>
     <header class="jumbotron">
         <div class="container-fluid">
-            <h1 class="display-4 col-12">Your Weather dashboard</h1>
+            <h1 class="display-4 col-12">Your Weather Dashboard</h1>
         </div>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <div class ="row">
-            <aside class="aside col-sm-3">
-                    <p>Search for a city:</p>
+            <aside class="aside col-md-3">
                     <label for="userinput">City Name:</label>
                     <input name="userinput" id="userinput" type="text" placeholder="Minneapolis"/>
-                    <button class="apirequest" id="search"></button>
-                
-                <div id="pastsearch"></div>
+                    <button class="apirequest btn btn-outline-primary" id="search">Search</button>
+                    <div id="pastsearch"></div>
             </aside>
             <main class="main col-sm-9">
                 <div class ="container">
                     <section id="today col-12">
-                        <h3 id="cityname">something</h3>
-                        <p id="currtemp">currenttemp</p>
-                        <p id="currhum">current hu,</p>
-                        <p id="windspeed">wind</p>
-                        <p id="uvindex">uvindex</p>
+                        <h3 id="cityname">City Name:</h3>
+                        <p id="currtemp">Temperature:</p>
+                        <p id="currhum">Humidity:</p>
+                        <p id="windspeed">Wind Speed:</p>
+                        <p id="uvindex">UV Index: </p>
                     </section>
                     <section>
-                        <h5>5-day forecast</h5>
-                        <div class= "container future">
+                        <h5>5-day Forecast:</h5>
+                        <div id="future" class= "container">
                         </div>
                     </section>
                 </div>
