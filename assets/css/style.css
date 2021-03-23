@@ -27,17 +27,17 @@ figure {
 
 .low{
     background-color: green;
-    padding:1.5%;
+    padding:1.1%;
     border-radius: 25%;
 }
 .medium{
     background-color: yellow;
-        padding:1.5%;
+        padding:1.1%;
     border-radius: 25%;
 }
 .high{
     background-color: red;
-        padding:1.5%;
+        padding:1.1%;
     border-radius: 25%;
 }
 
@@ -58,6 +58,6 @@ aside{
     margin:1%;
 }
 
-P{
+P, h5{
     font-weight: bolder;
 }

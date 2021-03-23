@@ -83,7 +83,7 @@ search.on('click', function (event){
                     var dayFig = $('<figure>');
                     dayFig.addClass('col-md-2');
 
-                    var date = $('<p>');
+                    var date = $('<h5>');
                     var day =moment().add(i/8,'days').format('l');
                     date.text(day);
 
@@ -193,13 +193,13 @@ pastSearch.on('click', '.apirequest', function(item,index){
                     var dayFig = $('<figure>');
                     dayFig.addClass('col-md-2');
 
-                    var date = $('<p>');
+                    var date = $('<h5>');
                     var day =moment().add(i/8,'days').format('l');
                     date.text(day);
 
                     var weatherIcon =$('<img>');
                     weatherIcon.addClass('weather-icon');
-                    weatherIcon.attr('src','http://openweathermap.org/img/wn/'+ response.list[i].weather[0].icon+'.png');
+                    weatherIcon.attr('src','http://openweathermap.org/img/wn/'+ pastfiveday.list[i].weather[0].icon+'.png');
                     
 
                     var temp = $('<p>');
