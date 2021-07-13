@@ -1,9 +1,40 @@
-# weather_dashboard
 
-This is a weatherdash board! Witha simple search for any city, you will get both current weather and a 5day forecast.
+# Weather Dashboard
 
-It features a colored UV Index as well as those cute weather icons.  
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]
 
-It will also hold your past searches and will send you new information if using them.
+## Description
+Allows the user to search a city and get a current and 5 day forcast from Open Weather. It also saves past searches to look again with just the click of a button.
 
-![image](https://user-images.githubusercontent.com/77998885/112232173-1aaa6880-8c06-11eb-85c0-58b853310194.png)
+##  Table of Contents
+
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Questions)
+
+## Installation
+
+
+## Usage
+Type in a city name and click search.
+
+## License
+Mozzila Public License 2.0
+Please review [https://opensource.org/licenses/MPL-2.0](https://opensource.org/licenses/MPL-2.0) to understand the license.
+
+## Contributing
+
+
+## Tests
+
+
+## Questions
+Come checkout my Github!
+
+[StevenVC-P](https://www.github/StevenVC-P)
+
+And if you have any questions you can e-mail me at:
+[steven.vancourt@gmail.com](steven.vancourt@gmail.com)
